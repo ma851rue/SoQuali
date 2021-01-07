@@ -1,0 +1,16 @@
+Fehler 1:
+
+Server erwatet im XML als erstes das Datum, die Maschiene schreibt aber die Uhrzeit
+-> Damit keine Interpretation der Parameter durch den Server möglich
+
+Fehler 2:
+
+HTTP request geht an den Falschen Endpoint (z.b. Maschine macht request an einen Service Endpoint der die
+Maschiene als defekt meldet)
+-> Aufruf am Falschen Baustein
+
+Fehler 3:
+
+Maschiene erwartet eine Antwort des Servers nach 10 Sekunden, der Server benötigt aber 15 Sekunden.
+Die Maschiene meldet daher immer einen Fehler.
+->Falsche Antwortzeit
