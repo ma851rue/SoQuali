@@ -20,7 +20,7 @@ public class MyStringTest {
     }
 
     @Test
-    public void testEqualsFalseNoInstanceOfMyString() {
+    public void testEqualsFalseNotSameObject() {
         //Setup
         MyString myString = new MyString("a");
 
